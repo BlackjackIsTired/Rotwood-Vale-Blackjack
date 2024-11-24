@@ -68,6 +68,11 @@
 	name = "Steel Mask"
 	cost = 40
 	contains = list(/obj/item/clothing/mask/rogue/facemask/steel)
+	
+/datum/supply_pack/rogue/Things/mask/hound
+	name = "Steel Hound Mask"
+	cost = 40
+	contains = list(/obj/item/clothing/mask/rogue/facemask/steel/hound)
 
 /datum/supply_pack/rogue/Things/coif
 	name = "coif"
