@@ -13,7 +13,7 @@
 				To disrespect you is to disrespect the Duke himself. Let none commit such an act and go unreprised. \
 				Your responsibilities are great and varied. Every matter falls under your purview. \
 				Whether military or clandestine, if it matters to the fate of the Duchy, it is of importance to you. \
-				Shift matters into His Grace's favor as you always have, ensure as much as possible in this often t"
+				Shift matters into His Grace's favor as you always have, ensure as much as possible in this often tumultuous Duchy tilts your way and you will have done your duty to your Duke and your friend."
 
 	whitelist_req = TRUE
 	give_bank_account = 44
