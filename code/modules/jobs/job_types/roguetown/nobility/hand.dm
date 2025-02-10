@@ -6,10 +6,15 @@
 	total_positions = 1
 	spawn_positions = 1
 	allowed_races = RACES_SHUNNED_UP_PLUS_SEELIE
-	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/hand
 	display_order = JDO_HAND
-	tutorial = "You owe everything to your liege. Once, you were just a humble friend- now you are one of the most important men within the realm itself. You have played spymaster and confidant to the Noble-Family for so long that you are a vault of intrigue, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with those lips than any blademaster could ever claim to."
+	tutorial = "You hold the second most important and powerful position in the Realm. You are the Duke's Hand. A position you've held for many years. \
+				You speak with his authority, by right of your position and his trust. The words that leave your mouth are imbued as though they were his own. \
+				To disrespect you is to disrespect the Duke himself. Let none commit such an act and go unreprised. \
+				Your responsibilities are great and varied. Every matter falls under your purview. \
+				Whether military or clandestine, if it matters to the fate of the Duchy, it is of importance to you. \
+				Shift matters into His Grace's favor as you always have, ensure as much as possible in this often t"
+
 	whitelist_req = TRUE
 	give_bank_account = 44
 	min_pq = 3
@@ -67,3 +72,4 @@
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	else if(isseelie(H))	//Since seelie hands no longer get heavy armor, giving them dodge expert instead
 		ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/living/carbon/human/proc/request_law, /mob/living/carbon/human/proc/request_law_removal, /mob/living/carbon/human/proc/request_purge)

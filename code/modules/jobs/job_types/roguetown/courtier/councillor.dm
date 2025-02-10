@@ -3,21 +3,23 @@
 	flag = COUNCILLOR
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
+	total_positions = 1
+	spawn_positions = 1
+	allowed_ages = ALL_AGES_LIST
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_COUNCILLOR
-	tutorial = "You may have inherited this role, bought your way into it, or were appointed by the Marshal themselves; \
-			Regardless of origin, you now serve as an assistant, planner, and juror for the Marshal. \
-			You help him oversee the taxation, construction, and planning of new laws. \
-			You only answer to the Duke, Marshal, Duchess, Heir, or Heiress. However, your main focus is to assist the Marshal with their duties."
+	tutorial = "It wasn't easy to climb this far, even as an aristocrat. \
+				Whether through influence, guile or manipulation, you manuevered your way here. \
+				An influential Lord holding the esteemed position of Councillor in the Duke's Court. A position you've successfully held for many years. \
+				You are the Hand's Assistant, it's your responsibility to assist them with their goals, for better or worse. \
+				After all, you wouldn't have come this far without them... They trust you. But it's easy to fall, no matter how high your seat. \
+				Without the Hand's Authority, you lack their influence within the Keep. Ensure none look down upon you, your position is one worthy of respect. \
+				After all... If one man is allowed to get away with disrespecting you... They all will..."
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/roguetown/councillor
 	
 	give_bank_account = 40
-	min_pq = 2
+	min_pq = 6
 	max_pq = null
 
 /datum/outfit/job/roguetown/councillor/pre_equip(mob/living/carbon/human/H)
@@ -45,4 +47,4 @@
 		H.change_stat("fortune", 1)
 	
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-
+	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw)

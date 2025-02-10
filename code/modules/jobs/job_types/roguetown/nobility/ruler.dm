@@ -11,7 +11,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE, FEMALE)
 
 	spells = list(
 		/obj/effect/proc_holder/spell/self/grant_title,
@@ -24,7 +23,12 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error in their ways."
+	tutorial = "You are the ultimate authority within your Duchy, the Duke. There are none that even come close to you, except for your Hand and your trusty retinue. \
+				All of them have served you loyally and faithfully for many, many years. Each of them swearing their fealty to you when it came time to pass the Crown. \
+				Treasure them, for without them your will cannot be enacted. And with all those greedy eyes upon your Crown... \
+				The plotters ready to pounce at a moment's notice... You'll need their loyalty now more than ever... You must not lose your Crown. \
+				And even though your domain is a chaotic one, a place regularly engulfed in turmoil and conflict, whether from without or within. Your Noble Dynasty MUST be preserved at ALL COSTS. \
+				While at the same time, you must ensure that your heirs are ready. One of them will succeed the Throne, you must try your best to help them learn to rule for the sake of your legacy..."
 	whitelist_req = FALSE
 	min_pq = 10
 	max_pq = null

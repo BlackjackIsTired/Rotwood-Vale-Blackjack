@@ -8,13 +8,14 @@
 	spawn_positions = 1
 
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "You served your time gracefully as a Knight of the crown, and now you've grown into a role which many men dream to become. \
-				You are the Marshal's chosen, a Banneret, elevated to command His Highness' personal retinue. \
-				Keep your men in line, as for this realm to prosper, the duke must be safe. \
-				The Men at Arms and the Gatemaster are under your direct supervision. \
-				The only men on par with you, as part of the armed retinue and not under your direct command, are your fellow Knights."
+	allowed_ages = ALL_AGES_LIST
+	tutorial = "You've served loyally and competently by the Duke's side for many years now. \
+				As the Duke's chosen, you are the Banneret to command their personal retinue. \
+				Keep your men in line. For this realm to survive, they will need your competence. \
+				The Men-at-arms and Gatemaster are yours to command, \
+				the loyal retinue, that have been by your side even before you were made Captain. \
+				The only people on par with you, as part of the armed retinue and not under your direct command, is your fellow Knight. \
+				You made your oath to the Duke, His Family and the Realm"
 	display_order = JDO_GUARD_CAPTAIN
 	whitelist_req = FALSE
 
@@ -48,7 +49,7 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/pigface
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	gloves = /obj/item/clothing/gloves/roguetown/plate
@@ -83,13 +84,7 @@
 		H.change_stat("constitution", 2)
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
-		H.change_stat("fortune", 2)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
-	if(H.gender == FEMALE)
-		var/acceptable = list("Tomboy", "Bob", "Curly Short")
-		if(!(H.hairstyle in acceptable))
-			H.hairstyle = pick(acceptable)
-			H.update_hair()
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	H.verbs |= /mob/proc/haltyell

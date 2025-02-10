@@ -102,11 +102,11 @@
 #define STEWARD		(1<<3)
 #define KNIGHT		(1<<4)
 #define GUARD_CAPTAIN		(1<<5)
-#define MARSHAL		(1<<6)
-#define HOSTAGE		(1<<7)
+#define HOSTAGE		(1<<6)
 
 #define GARRISON		(1<<1)
 
+#define SERGEANT_AT_ARMS		(1<<1)
 #define GUARDSMAN	(1<<0)
 #define MANATARMS	(1<<1)
 #define DUNGEONEER	(1<<2)
@@ -184,9 +184,8 @@
 #define MERCENARIES		(1<<8)
 
 #define MERCENARY	(1<<0)
-#define VETERAN		(1<<1)
-#define SEELIE		(1<<2)
-#define MERC_CLERK	(1<<3)
+#define SEELIE		(1<<1)
+#define MERC_CLERK	(1<<2)
 
 #define GOBLIN		(1<<9)
 
@@ -228,7 +227,6 @@
 #define JDO_HAND 2
 #define JDO_STEWARD 3
 #define JDO_CLERK 3.1
-#define JDO_MARSHAL 4
 #define JDO_COUNCILLOR 4.1
 #define JDO_MAGICIAN 5
 #define JDO_PHYSICIAN 6
@@ -242,6 +240,7 @@
 #define JDO_GUARD_CAPTAIN 8
 #define JDO_KNIGHT 8.1
 #define JDO_SQUIRE 8.2
+#define JDO_VET 8.25
 #define JDO_CASTLEGUARD 8.3
 #define JDO_GATEMASTER 8.4
 #define JDO_SHERIFF 8.5
@@ -292,8 +291,7 @@
 
 #define JDO_MERC_CLERK 31
 #define JDO_MERCENARY 31.1
-#define JDO_VET 31.2
-#define JDO_SEELIE 31.3
+#define JDO_SEELIE 31.2
 
 #define JDO_VAGRANT 33
 

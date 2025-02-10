@@ -3,15 +3,19 @@
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	allowed_races = RACES_TOLERATED_UP
-	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
+	allowed_ages = ALL_AGES_LIST
 	allowed_patrons = ALL_NON_INHUMEN_PATRONS
-	tutorial = "A Knight with expert training; \
-	Born into petty nobility and raised as a squire from a young age, now you Guard the Duke or Duchess, answer to their commands, and protect the court's honor. \
-	You're wholly dedicated to the standing Regent and their safety. Do not fail."
+	tutorial = "You still stand tall by His Grace's side, as you have for many, many years. Your loyalty is without question. \
+				The person you've given your sacred oath to sitting atop that Throne to your side. \
+				Serve faithfully and with distinction, for without you, his stalwart defender, his life is in jeopardy. \
+				Without you to enforce his will, it's likely he will perish in the turmoil that regularly engulfs his domain. \
+				You are the backbone behind the Crown, there are none more powerful than you. \
+				You made your oath to the Duke alone, and that oath will carry on to his successor. \
+				But it's also your responsibility to ensure your own successor is ready. Your Squire, the one you chose for one reason or another. \
+				When you die as all men do, your blade and position will pass to them. Be sure they're ready. For their failures... Are your own..."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight

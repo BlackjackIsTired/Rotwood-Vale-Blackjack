@@ -5,13 +5,14 @@
 	faction = "Station"
 	total_positions = 6
 	spawn_positions = 6
-
-	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the Royal Family and their Court, \
-				trained regularly in combat and siege warfare you stand a small chance of surviving the Duke's reign. \
-				It's an honor to die as part of His Highness' retinue, the Marshal reminds you every night."
+	allowed_ages = ALL_AGES_LIST
+	tutorial = "You've served the Crown for many years and in that time you've proven yourself worthy again and again. \
+				It's a point of pride for all Men-at-arms to have achieved the recognition that put them here and you are no different. \
+				Without loyal soldiers like you, the Crown would fall within the day, a truth you dare not voice. \
+				It's your responsibility to protect the Duke, the Ducal Family and the Realm. A responsibility embedded within the oath you've taken. \
+				Follow the orders of your Captain, they are not only a Noble, but have led and served alongside you for years. They no doubt have the Realm's best interests at heart... \
+				After all... They were chosen by the Duke himself."
 	display_order = JDO_CASTLEGUARD
 	whitelist_req = TRUE
 

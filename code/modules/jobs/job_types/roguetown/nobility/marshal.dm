@@ -1,14 +1,12 @@
 /datum/job/roguetown/marshal
 	title = "Royal Marshal"
-	flag = MARSHAL
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE)
 	allowed_races = RACES_TOLERATED_UP
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD)
-	display_order = JDO_MARSHAL
 	tutorial = "You and your Councillors are the judge and jury, only overruled by His Majesty. \
 				Plan with the Councillors on any issues, laws, judgements, and construction that are required to adapt to the new world. \
 				Your two assistant Councillors are there to fuel your wonderful ideas, lifting the weight of responsibility off your shoulders. \

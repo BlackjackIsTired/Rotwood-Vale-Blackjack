@@ -3,13 +3,14 @@
 	flag = SQUIRE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	allowed_races = RACES_SHUNNED_UP
-	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
 
-	tutorial = "Mom 'n' Da said you were going to be something, they had better aspirations for you than the life of a peasant. You practiced the basics in the field alongside your friends, swordfighting with sticks, chasing rabbits with grain flail, and helping around the house lifting heavy bags of grain. The Knight took notice of your potential and brought you on as his personal ward. You're going to be something someday. "
+	tutorial = "Your Knight, they saw something in you. Whatever it was, they chose you to become their Squire. It's not an opportunity that comes by every day. \
+				The potential for elevation, nobility, knighthood... Responsibility... Grow into something worthy of the effort they've been putting in on you all these many years. \
+				For when they perish, their blade and position will pass to you as their chosen successor. They trust you. Believe in you. You cannot fail now."
 
 	outfit = /datum/outfit/job/roguetown/squire
 	display_order = JDO_SQUIRE
